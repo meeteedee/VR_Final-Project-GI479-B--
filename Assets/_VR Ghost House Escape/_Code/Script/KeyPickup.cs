@@ -13,6 +13,7 @@ public class KeyPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("- - - - - - - Something touch Key " + other.gameObject.name);
         if (!other.CompareTag("Player")) return;
 
         PlayerInventory inv = other.GetComponent<PlayerInventory>();
