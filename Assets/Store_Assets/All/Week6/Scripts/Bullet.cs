@@ -38,7 +38,8 @@ public class Bullet : MonoBehaviour
 
             Instantiate(hitParticle, hitPos, hitRot);
         }
-        if (collision.gameObject.TryGetComponent(out Health health))
+        Health health = collision.gameObject.GetComponentInParent<Health>();
+        if (health != null)
         {
             health.TakeDamage(bulletDamage);
         }
