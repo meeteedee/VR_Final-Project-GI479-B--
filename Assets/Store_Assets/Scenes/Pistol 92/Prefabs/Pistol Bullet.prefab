@@ -243,6 +243,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletDamage: 30
   rb: {fileID: 7064924425854299344}
-  speed: 10
+  speed: 2
   autoDestroyTime: 30
   hitParticle: {fileID: 7275548786892498063, guid: 5bc9a0bf98f67d240a936bf476ba2082, type: 3}
